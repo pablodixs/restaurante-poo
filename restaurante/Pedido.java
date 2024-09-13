@@ -16,6 +16,12 @@ public class Pedido {
         this.status = status;
     }
 
+    public Pedido(Cliente cliente, String status) {
+        this.cliente = cliente;
+        this.status = status;
+        this.itens = new ArrayList<>();
+    }
+
     public ArrayList<Item> getItens() {
         return itens;
     }
@@ -59,6 +65,7 @@ public class Pedido {
             total += item.getPreco();
         }
 
+        this.total = total;
         return total;
     }
 

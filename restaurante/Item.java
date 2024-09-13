@@ -3,6 +3,8 @@ public class Item {
     private String categoria;
     private double preco;
 
+    public  Item() {}
+
     public Item(String nome, String categoria, double preco) {
         this.nome = nome;
         this.categoria = categoria;
@@ -34,8 +36,10 @@ public class Item {
     }
 
     public void getDetalhesItem() {
-        System.out.println("Nome do prato: " + this.nome);
-        System.out.println("Preço: R$ " + this.preco);
-        System.out.println("Categoria: " + this.categoria);
+        System.out.println("    Nome do prato: " + this.nome);
+        System.out.println("    Preço: R$ " + this.preco);
+        System.out.println("    Categoria: " + this.categoria);
     }
+
+
 }
